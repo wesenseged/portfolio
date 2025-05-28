@@ -15,7 +15,7 @@ type Card = {
   src: string;
   ctaText: string;
   ctaLink: string;
-  content: () => JSX.Element;
+  content: () => React.ReactNode;
   items: Item[];
 };
 
