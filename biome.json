@@ -1,0 +1,80 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+
+  "files": {
+    "ignoreUnknown": false,
+    "ignore": ["node_modules", "dist"]
+  },
+
+  "json": {
+    "parser": {
+      "allowComments": true
+    }
+  },
+
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "lineEnding": "lf",
+    "lineWidth": 100
+  },
+
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double",
+      "semicolons": "always",
+      "trailingCommas": "all"
+    }
+  },
+
+  "organizeImports": {
+    "enabled": true
+  },
+
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "all": false,
+
+      "a11y": {
+        "noBlankTarget": "warn",
+        "useAltText": "warn",
+        "useButtonType": "warn"
+      },
+
+      "correctness": {
+        "noInvalidPositionAtImportRule": "error",
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error",
+        "useHookAtTopLevel": "error",
+        "useJsxKeyInIterable": "error"
+      },
+
+      "suspicious": {
+        "noCommentText": "warn",
+        "noConsoleLog": "warn",
+        "noDoubleEquals": "error"
+      },
+
+      "style": {
+        "noUselessElse": "error",
+        "useConst": "error",
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "strictCase": true,
+            "requireAscii": true,
+            "filenameCases": ["kebab-case", "export"]
+          }
+        }
+      }
+    }
+  }
+}
