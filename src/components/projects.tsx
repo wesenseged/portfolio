@@ -202,7 +202,7 @@ const Projects = () => {
           <h3 className="text-sm md:text-lg text-muted-foreground">Projects</h3>
         </div>
 
-        <h1 className="text-lg md:text-3xl font-bold ">My Works</h1>
+        <h1 className="text-lg md:text-3xl font-bold ">MY-WORKS</h1>
         <p className="text-sm md:text-lg text-muted-foreground ">
           Discover my portolio, where purposeful interfaces meet captivating design.
         </p>

@@ -2,7 +2,7 @@ import { Dot } from "lucide-react";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 
 const Stack = () => {
-  const frontend = [
+  const tools = [
     {
       id: 1,
       name: "React",
@@ -57,6 +57,84 @@ const Stack = () => {
       designation: "PostgreSQL database",
       image: "projects/postgresql.png",
     },
+    {
+      id: 10,
+      name: "Linux",
+      designation: "Open-source operating system",
+      image: "projects/tux.png",
+    },
+    {
+      id: 11,
+      name: "Neovim",
+      designation: "Modern Vim-based text editor",
+      image: "projects/neovim.png",
+    },
+    {
+      id: 12,
+      name: "Lua",
+      designation: "Lightweight scripting language",
+      image: "projects/lua.png",
+    },
+    {
+      id: 13,
+      name: "Shadcn UI",
+      designation: "Accessible component library",
+      image: "projects/shadcn-ui.png",
+    },
+    {
+      id: 14,
+      name: "Next.js",
+      designation: "React framework for production",
+      image: "projects/next-js.png",
+    },
+    {
+      id: 15,
+      name: "Clerk",
+      designation: "Authentication toolkit",
+      image: "projects/clerk.png",
+    },
+    {
+      id: 16,
+      name: "Better Auth",
+      designation: "Improved authentication solutions",
+      image: "projects/better-auth.png",
+    },
+    {
+      id: 17,
+      name: "Bash",
+      designation: "Unix shell and scripting language",
+      image: "projects/bash.png",
+    },
+    {
+      id: 18,
+      name: "Dotenv",
+      designation: "Environment variables loader",
+      image: "projects/dot-env.png",
+    },
+    {
+      id: 19,
+      name: "GitHub",
+      designation: "Code hosting platform",
+      image: "projects/github.png",
+    },
+    {
+      id: 20,
+      name: "Drizzle ORM",
+      designation: "Type-safe ORM for SQL databases",
+      image: "projects/drizzle-orm.png",
+    },
+    {
+      id: 21,
+      name: "Figma",
+      designation: "Design and prototyping tool",
+      image: "projects/figma.png",
+    },
+    {
+      id: 22,
+      name: "npm",
+      designation: "JavaScript package manager",
+      image: "projects/npm.png",
+    },
   ];
 
   return (
@@ -67,12 +145,12 @@ const Stack = () => {
           <h3 className="text-sm md:text-lg text-muted-foreground">Tech-Stack</h3>
         </div>
 
-        <h1 className="text-lg md:text-3xl font-bold ">My Works</h1>
+        <h1 className="text-lg md:text-3xl font-bold ">TECHNOLOGIES-&-TOOLS</h1>
         <p className="text-sm md:text-lg text-muted-foreground ">
-          Discover my portolio, where purposeful interfaces meet captivating design.
+          The key technologies, frameworks, and tools that power my projects.
         </p>
-        <div className="flex items-center lg:items-start w-10/12 ">
-          <AnimatedTooltip items={frontend} />
+        <div className="grid grid-cols-6 items-center lg:items-start w-10/12 ">
+          <AnimatedTooltip items={tools} />
         </div>
       </div>
     </section>

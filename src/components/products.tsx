@@ -103,7 +103,7 @@ const Products = () => {
           <h3 className="text-sm md:text-lg text-muted-foreground">Products</h3>
         </div>
 
-        <h1 className="text-lg md:text-3xl font-bold ">Explore My Products</h1>
+        <h1 className="text-lg md:text-3xl font-bold ">EXPLORE-MY-PRODUCTS</h1>
         <p className="text-sm md:text-lg text-muted-foreground ">
           some of the digital products that i worked on as side projects, explore and try it now
         </p>
