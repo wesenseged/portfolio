@@ -1,26 +1,71 @@
-# ✨ tailwind-shadcn-biome
+# Portfolio Website
 
-A minimal React starter template using **Vite**, **Tailwind CSS v4**, **Shadcn UI**, and **Biome** (as formatter and linter).
-No ESLint or Prettier — powered entirely by Biome for fast and reliable linting and formatting.
+Welcome to my personal portfolio website! This project showcases my skills, projects, and background in a modern, sleek, and responsive design built with create-wsx.
 
-> 🛠 Recommended for rapid modern UI development with great DX.
+---
 
-## 🚀 Scripts
+## Technologies Used
 
-| Script          | Description                          |
-| --------------- | ------------------------------------ |
-| `pnpm dev`      | Start the Vite dev server            |
-| `pnpm build`    | Build the project for production     |
-| `pnpm preview`  | Preview the production build locally |
-| `pnpm format`   | Format code using Biome              |
-| `pnpm lint`     | Lint code and apply fixes with Biome |
-| `pnpm lint:fix` | Alias for `biome check --write`      |
+* React 18
+* Tailwind CSS
+* Shadcn UI
+* Framer Motion
+* Vite
+* TypeScript 
 
-## 📦 Tech Stack
+---
 
-* **React**
-* **Vite**
-* **Tailwind CSS v4**
-* **Shadcn UI**
-* **Biome** (formatter + linter)
-* **TypeScript**
+## Getting Started
+
+### Prerequisites
+
+* Node.js (>=16.x)
+* npm or yarn
+
+### Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
+```
+
+2. Install dependencies
+
+```bash
+pnpm install
+```
+
+3. Run the development server
+
+```bash
+pnpm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view in the browser.
+
+### Build for Production
+
+```bash
+pnpm run build
+```
+
+---
+
+## Folder Structure
+
+```
+/src
+  /components   # Reusable UI components (buttons, cards, navbar, etc)
+  /utils        # Helper functions
+  App.tsx       # Root component
+  index.css     # Tailwind config and custom CSS
+  main.tsx      # Entry point
+```
+
+---
+
+## License
+
+This project is licensed under the MIT License.
