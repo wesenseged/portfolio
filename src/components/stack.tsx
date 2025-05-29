@@ -1,5 +1,5 @@
-import { Dot } from "lucide-react";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
+import CardItem from "./ui/card-items";
 
 const Stack = () => {
   const tools = [
@@ -137,19 +137,17 @@ const Stack = () => {
     },
   ];
 
+  const cardProps = {
+    subTitle: "Tech-Stack",
+    title: "TECHNOLOGIES-&-TOOLS",
+    desc: "The key technologies, frameworks, and tools that power my projects.",
+  };
+
   return (
     <section className="flex flex-col mt-32 items-start ">
       <div className="flex flex-col items-start space-y-6">
-        <div className="flex items-center space-x-2">
-          <Dot />
-          <h3 className="text-sm md:text-lg text-muted-foreground">Tech-Stack</h3>
-        </div>
-
-        <h1 className="text-lg md:text-3xl font-bold ">TECHNOLOGIES-&-TOOLS</h1>
-        <p className="text-sm md:text-lg text-muted-foreground ">
-          The key technologies, frameworks, and tools that power my projects.
-        </p>
-        <div className="grid grid-cols-6 items-center lg:items-start w-10/12 ">
+        <CardItem subTitle={cardProps.subTitle} title={cardProps.title} desc={cardProps.desc} />
+        <div className="grid grid-cols-6 items-center mt-10 lg:items-start w-10/12 ">
           <AnimatedTooltip items={tools} />
         </div>
       </div>

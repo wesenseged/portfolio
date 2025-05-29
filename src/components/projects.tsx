@@ -1,5 +1,5 @@
-import { Dot } from "lucide-react";
 import { ExpandableCardDemo } from "./ui/expandable-card-demo";
+import CardItem from "./ui/card-items";
 
 const Projects = () => {
   const cards = [
@@ -194,18 +194,16 @@ const Projects = () => {
     },
   ];
 
+  const cardProps = {
+    subTitle: "Projects",
+    title: "MY-WORKS",
+    desc: "Discover my portolio, where purposeful interfaces meet captivating design.",
+  };
+
   return (
     <section className="flex flex-col mt-32 items-start ">
       <div className="flex flex-col items-start space-y-6">
-        <div className="flex items-center space-x-2">
-          <Dot />
-          <h3 className="text-sm md:text-lg text-muted-foreground">Projects</h3>
-        </div>
-
-        <h1 className="text-lg md:text-3xl font-bold ">MY-WORKS</h1>
-        <p className="text-sm md:text-lg text-muted-foreground ">
-          Discover my portolio, where purposeful interfaces meet captivating design.
-        </p>
+        <CardItem subTitle={cardProps.subTitle} title={cardProps.title} desc={cardProps.desc} />
         <div className="flex items-center lg:items-start w-10/12 mt-10">
           <ExpandableCardDemo cards={cards} />
         </div>
