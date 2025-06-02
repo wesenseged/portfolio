@@ -118,7 +118,7 @@ const Projects = () => {
       description: "A modern e-commerce app focused on shoes using TanStack and advanced tooling.",
       src: "/projects/boot.png",
       ctaText: "Open",
-      ctaLink: "https://ui.aceternity.com/templates",
+      ctaLink: "https://github.com/wesenseged/chama",
       content: () => (
         <p>
           Chama is a full-stack TanStack Start-based e-commerce app crafted for selling footwear.
