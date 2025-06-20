@@ -24,12 +24,6 @@ const Contact = () => {
               <span>Contact Me</span>
             </a>
           </Button>
-
-          <Button variant="default" asChild>
-            <a href="/Resume-2025.pdf" download="My_Resume.pdf" className="transition">
-              <Download /> Resume
-            </a>
-          </Button>
         </div>
       </div>
     </section>
