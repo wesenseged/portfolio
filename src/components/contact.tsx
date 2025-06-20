@@ -1,4 +1,3 @@
-import { Download } from "lucide-react";
 import { Button } from "./ui/button";
 import CardItem from "./ui/card-items";
 
