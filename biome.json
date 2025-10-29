@@ -1,80 +1,52 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.0.2/schema.json",
 
-  "vcs": {
-    "enabled": false,
-    "clientKind": "git",
-    "useIgnoreFile": false
-  },
+  "root": true,
 
   "files": {
-    "ignoreUnknown": false,
-    "ignore": ["node_modules", "dist"]
-  },
-
-  "json": {
-    "parser": {
-      "allowComments": true
-    }
+    "includes": ["src/**"],
+    "ignoreUnknown": true
   },
 
   "formatter": {
     "enabled": true,
+    "includes": ["src/**"],
+    "formatWithErrors": false,
     "indentStyle": "space",
+    "indentWidth": 2,
     "lineEnding": "lf",
-    "lineWidth": 100
-  },
-
-  "javascript": {
-    "formatter": {
-      "quoteStyle": "double",
-      "semicolons": "always",
-      "trailingCommas": "all"
-    }
-  },
-
-  "organizeImports": {
-    "enabled": true
+    "lineWidth": 100,
+    "attributePosition": "auto",
+    "bracketSameLine": false,
+    "bracketSpacing": true,
+    "expand": "auto",
+    "useEditorconfig": false
   },
 
   "linter": {
     "enabled": true,
+    "includes": ["src/**"],
     "rules": {
       "recommended": true,
-      "all": false,
+      "complexity": "warn",
+      "correctness": "error",
+      "nursery": "off",
+      "performance": "warn",
+      "security": "error",
+      "style": "warn",
+      "suspicious": "error"
+    }
+  },
 
-      "a11y": {
-        "noBlankTarget": "warn",
-        "useAltText": "warn",
-        "useButtonType": "warn"
-      },
-
-      "correctness": {
-        "noInvalidPositionAtImportRule": "error",
-        "noUnusedImports": "error",
-        "noUnusedVariables": "error",
-        "useHookAtTopLevel": "error",
-        "useJsxKeyInIterable": "error"
-      },
-
-      "suspicious": {
-        "noCommentText": "warn",
-        "noConsoleLog": "warn",
-        "noDoubleEquals": "error"
-      },
-
-      "style": {
-        "noUselessElse": "error",
-        "useConst": "error",
-        "useFilenamingConvention": {
-          "level": "error",
-          "options": {
-            "strictCase": true,
-            "requireAscii": true,
-            "filenameCases": ["kebab-case", "export"]
-          }
-        }
-      }
+  "javascript": {
+    "parser": {
+      "jsxEverywhere": true,
+      "unsafeParameterDecoratorsEnabled": false
+    },
+    "formatter": {
+      "quoteStyle": "double",
+      "semicolons": "always",
+      "trailingCommas": "all"
     }
   }
 }

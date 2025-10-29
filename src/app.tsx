@@ -7,6 +7,7 @@ import Projects from "@/components/projects";
 import Products from "@/components/products";
 import Stack from "@/components/stack";
 import Contact from "@/components/contact";
+import Latest from "./components/latest";
 
 function App() {
   const [isDark, setIsDark] = useState(true);
@@ -22,6 +23,7 @@ function App() {
       </Button>
 
       <Hero isDark={isDark} />
+      <Latest />
       <Projects />
       <Products />
       <Stack />

@@ -33,7 +33,7 @@ const Hero = ({ isDark }: { isDark: boolean }) => {
         <img
           src="no1.JPG"
           alt="profile"
-          className="w-64 h-64 lg:w-96 lg:h-96 rounded-full object-cover"
+          className="hidden md:flex md:w-64 md:h-64 lg:w-96 lg:h-96 rounded-full object-cover"
         />
       </div>
     </section>
