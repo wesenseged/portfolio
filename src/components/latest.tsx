@@ -9,7 +9,7 @@ const Latest = () => {
         "A beautiful and fast desktop app to read the Amharic Bible built using Kirigami and Qt.",
       src: "projects/Ebible.png",
       ctaText: "Open",
-      ctaLink: "https://github.com/wesenseged/Amharic-bible",
+      ctaLink: "https://flathub.org/en/apps/io.github.wesenseged.Amharic-bible",
       content: () => (
         <p>
           Amharic Bible is a native desktop application designed for fluent and immersive Bible
@@ -56,21 +56,19 @@ const Latest = () => {
       ],
     },
     {
-      title: "Ethiopian Calendar",
-      description:
-        "A modern and elegant Ethiopian Calendar app built using Kirigami and Qt for Linux.",
-      src: "projects/calendar-alt.png",
-      ctaText: "Building",
-      ctaLink: "https://github.com/hbey/ethiopian-calendar",
+      title: "Pagume",
+      description: "Pagume is a modern Ethiopian calendar app built with KDE Kirigami and Qt6.",
+      src: "projects/calendar.png",
+      ctaText: "Open",
+      ctaLink: "https://flathub.org/en/apps/io.github.wesenseged.Pagume",
       content: () => (
         <p>
-          Ethiopian Calendar is a desktop app that brings the traditional Ethiopian date system to
-          modern desktops. It features accurate date conversion, event reminders, and a native KDE
-          look.
+          Pagume is a desktop app that brings the traditional Ethiopian date system to modern
+          desktops. It features accurate date conversion, event reminders, and a native KDE look.
           <br />
           <br />
-          Developed using <b>Qt6</b> and <b>Kirigami</b>, it integrates seamlessly into Plasma
-          environments and supports both <b>Gregorian</b> and <b>Ethiopian</b> date views.
+          Named after Ethiopia’s unique 13th month, Pagume combines tradition with a clean, elegant
+          design.
         </p>
       ),
       items: [
