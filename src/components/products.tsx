@@ -1,5 +1,5 @@
-import { ExpandableCardDemo } from "./ui/expandable-card-demo";
-import CardItem from "./ui/card-items";
+import { ExpandableCardDemo } from "@/components/ui/expandable-card-demo";
+import CardItem from "@/components/ui/card-items";
 
 const Products = () => {
   const cards = [

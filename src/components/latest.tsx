@@ -1,5 +1,5 @@
-import { ExpandableCardDemo } from "./ui/expandable-card-demo";
-import CardItem from "./ui/card-items";
+import { ExpandableCardDemo } from "@/components/ui/expandable-card-demo";
+import CardItem from "@/components/ui/card-items";
 
 const Latest = () => {
   const cards = [
@@ -27,7 +27,7 @@ const Latest = () => {
           id: 1,
           name: "Qt",
           designation: "UI framework",
-          image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/qt/qt-original.svg",
+          image: "projects/qt.png",
         },
         {
           id: 2,
@@ -45,7 +45,7 @@ const Latest = () => {
           id: 4,
           name: "CMake",
           designation: "Build system",
-          image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cmake/cmake-plain.svg",
+          image: "projects/cmake.svg",
         },
         {
           id: 5,
@@ -76,7 +76,7 @@ const Latest = () => {
           id: 1,
           name: "Qt",
           designation: "UI framework",
-          image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/qt/qt-original.svg",
+          image: "projects/qt.png",
         },
         {
           id: 2,
@@ -94,7 +94,57 @@ const Latest = () => {
           id: 4,
           name: "CMake",
           designation: "Build system",
-          image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cmake/cmake-plain.svg",
+          image: "projects/cmake.svg",
+        },
+        {
+          id: 5,
+          name: "Flatpak",
+          designation: "Packaging format",
+          image: "projects/flatpak.png",
+        },
+      ],
+    },
+    {
+      title: "Yeneta",
+      description: "A complete amharic learning application build with Kirigami and Qt6.",
+      src: "projects/yeneta.png",
+      ctaText: "Building",
+      ctaLink: "/",
+      content: () => (
+        <p>
+          Yeneta is a native desktop application designed for beginner and professional Amharic
+          learners. Built with <b>Kirigami</b> and <b>Qt6</b>, it provides a clean, distraction-free
+          experience with support for offline access and an elegant modern KDE interface.
+          <br />
+          <br />
+          Its interactive design makes it perfect for everyone using it and keeping the interface
+          fully native to the Linux desktop environment.
+        </p>
+      ),
+      items: [
+        {
+          id: 1,
+          name: "Qt",
+          designation: "UI framework",
+          image: "projects/qt.png",
+        },
+        {
+          id: 2,
+          name: "Kirigami",
+          designation: "KDE Framework",
+          image: "projects/tux.png",
+        },
+        {
+          id: 3,
+          name: "C++",
+          designation: "Programming language",
+          image: "projects/c-plus-plus.png",
+        },
+        {
+          id: 4,
+          name: "CMake",
+          designation: "Build system",
+          image: "projects/cmake.svg",
         },
         {
           id: 5,
