@@ -24,7 +24,7 @@ export const teddyAfro: BlogPost = {
   title: "8/8/2018",
   date: "04-16-2026",
   excerpt:
-    "Today is 8/8/2018 in Ethiopian calendar, a historic day for music lovers. After eight long years, the king of Ethiopian music, Teddy Afro, is ...",
+    "Today is 8/8/2018 in Ethiopian calendar, a historic day for music lovers. After nine long years, the king of Ethiopian music, Teddy Afro, is ...",
   content: (
     <div className="space-y-6">
       <p>
