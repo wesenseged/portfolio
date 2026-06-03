@@ -12,7 +12,7 @@ const Contact = () => {
     <section className="flex flex-col mt-32 mb-20 items-start w-10/12">
       <div className="flex flex-col items-start space-y-6">
         <CardItem subTitle={cardProps.subTitle} title={cardProps.title} desc={cardProps.desc} />
-        <div className="flex flex-row space-x-4 md:space-x-16 items-center mt-4">
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-16 items-start md:items-center mt-4">
           <Button variant="default" asChild>
             <a
               href="mailto:wseged@proton.me"

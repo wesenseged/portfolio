@@ -30,12 +30,12 @@ export const blackLion: BlogPost = {
   title: "Black Lions, Roman Wolves",
   date: "02-27-2026",
   excerpt:
-    "Black Lions, Roman Wolves is a five-part documentary about Ethiopia’s decisive anti-colonial victory against Italy’s second invasion in 1935...",
+    "Black Lions, Roman Wolves is a five-part documentary about Ethiopia's decisive anti-colonial victory against Italy's second invasion in 1935...",
   content: (
     <div className="space-y-6">
       <p>
-        Black Lions, Roman Wolves is a five-part documentary about Ethiopia’s decisive anti-colonial
-        victory against Italy’s second invasion in 1935, a punitive expedition designed to revenge
+        Black Lions, Roman Wolves is a five-part documentary about Ethiopia's decisive anti-colonial
+        victory against Italy's second invasion in 1935, a punitive expedition designed to revenge
         her defeat at the Battle of Adwa in 1896.
       </p>
       <p>
