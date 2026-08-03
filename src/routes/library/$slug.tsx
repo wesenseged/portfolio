@@ -1,16 +1,16 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
-import { Article } from "@/components/ui/article";
-import { blogs } from "@/lib/blog-data";
+import { Book } from "@/components/ui/book";
+import { libraries } from "@/lib/library-data";
 
-function BlogPost() {
+function LibPost() {
   const { slug } = Route.useParams();
-  const blog = blogs.find((bl) => bl.slug === slug);
+  const lib = libraries.find((library) => library.slug === slug);
 
-  if (!blog) {
+  if (!lib) {
     throw notFound();
   }
 
-  return <Article title={blog.title} date={blog.date} content={blog.content} />;
+  return <Book title={lib.title} content={lib.content} date={lib.date} rating={lib.rating} />;
 }
 
 const NotFoundPage = () => {
@@ -22,7 +22,7 @@ const NotFoundPage = () => {
   );
 };
 
-export const Route = createFileRoute("/blog/$slug")({
-  component: BlogPost,
+export const Route = createFileRoute("/library/$slug")({
+  component: LibPost,
   notFoundComponent: NotFoundPage,
 });

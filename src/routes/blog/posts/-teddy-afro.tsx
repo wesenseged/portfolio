@@ -1,12 +1,12 @@
 import type { ReactNode } from "react";
 
-export type BlogPost = {
+interface BlogPost {
   slug: string;
   title: string;
   date: string;
   excerpt: string;
   content: ReactNode;
-};
+}
 
 const poem = `
 So many have died guarding your [her] honor
@@ -26,7 +26,7 @@ export const teddyAfro: BlogPost = {
   excerpt:
     "Today is 8/8/2018 in Ethiopian calendar, a historic day for music lovers. After nine long years, the king of Ethiopian music, Teddy Afro is ...",
   content: (
-    <div className="space-y-6">
+    <div className="font-anek text-lg space-y-6">
       <p>
         Today is 8/8/2018 in the Ethiopian calendar, a historic day for music lovers. After eight
         long years, the king of Ethiopian music, Teddy Afro is releasing a new album.

@@ -1,12 +1,12 @@
 import type { ReactNode } from "react";
 
-export type BlogPost = {
+interface BlogPost {
   slug: string;
   title: string;
   date: string;
   excerpt: string;
   content: ReactNode;
-};
+}
 
 const poem = `
 Once, a wild dog moved into a man's house and made it his home.
@@ -32,7 +32,7 @@ export const blackLion: BlogPost = {
   excerpt:
     "Black Lions, Roman Wolves is a five-part documentary about Ethiopia's decisive anti-colonial victory against Italy's second invasion in 1935...",
   content: (
-    <div className="space-y-6">
+    <div className="font-anek text-lg space-y-6">
       <p>
         Black Lions, Roman Wolves is a five-part documentary about Ethiopia's decisive anti-colonial
         victory against Italy's second invasion in 1935, a punitive expedition designed to revenge
@@ -44,7 +44,7 @@ export const blackLion: BlogPost = {
         warnings about the imminent return of Italians by warriors of the Battle of Adwa to their
         children.
       </p>
-      <div className="whitespace-pre-line text-center leading-relaxed italic">{poem}</div>
+      <div className="whitespace-pre-line text-center leading-relaxed italic ">{poem}</div>
       <p className="text-center">Excerpt from Black Lions, Roman Wolves by Haile Gerima</p>
     </div>
   ),

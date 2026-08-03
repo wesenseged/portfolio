@@ -1,156 +1,134 @@
-import { ExpandableCardDemo } from "@/components/ui/expandable-card-demo";
-import CardItem from "@/components/ui/card-items";
+import calendar from "@/assets/icons/calendar.png";
+import cpp from "@/assets/icons/cpp.svg";
+import bible from "@/assets/icons/Ebible.png";
+import qt from "@/assets/icons/qt.png";
+import yeneta from "@/assets/icons/yeneta.png";
 
-const Latest = () => {
+import CardItem from "@/components/ui/card-items";
+import { ExpandableCardDemo } from "@/components/ui/expandable-card-demo";
+
+export const Latest = () => {
+  const bibleStats = [
+    { id: 1, title: "Size", data: "2 MiB" },
+    { id: 2, title: "Age", data: "3+" },
+    { id: 3, title: "Installs", data: "2000+" },
+    { id: 4, title: "Free", data: "GPL-3.0" },
+  ];
+  const pagumeStats = [
+    { id: 1, title: "Size", data: "681 KiB" },
+    { id: 2, title: "Age", data: "3+" },
+    { id: 3, title: "Installs", data: "590+" },
+    { id: 4, title: "Free", data: "GPL-3.0" },
+  ];
+
+  const yenetaStats = [
+    { id: 1, title: "Size", data: "Null" },
+    { id: 2, title: "Age", data: "3+" },
+    { id: 3, title: "Installs", data: "Null" },
+    { id: 4, title: "Free", data: "GPL-3.0" },
+  ];
+
   const cards = [
     {
       title: "Amharic Bible",
       description:
         "A beautiful and fast desktop app to read the Amharic Bible built using Kirigami and Qt.",
-      src: "projects/Ebible.png",
+      src: bible,
       ctaText: "Open",
       ctaLink: "https://flathub.org/en/apps/io.github.wesenseged.Amharic-bible",
       content: () => (
-        <p>
-          Amharic Bible is a native desktop application designed for fluent and immersive Bible
-          reading in Amharic. Built with <b>Kirigami</b> and <b>Qt6</b>, it provides a clean,
-          distraction-free experience with support for offline access and an elegant modern KDE
-          interface.
-          <br />
-          <br />
-          Its lightweight design makes it perfect for daily reading while keeping the interface
-          fully native to the Linux desktop environment.
-        </p>
+        <div className="font-grotesk grid grid-cols-4 items-start gap-4 w-full">
+          {bibleStats.map((stat) => (
+            <div
+              key={stat.id}
+              className="flex flex-col rounded-lg bg-zinc-200 dark:bg-zinc-700 p-2 items-center"
+            >
+              <div>{stat.title}</div>
+              <div className="font-semibold text-foreground">{stat.data}</div>
+            </div>
+          ))}
+        </div>
       ),
       items: [
         {
           id: 1,
           name: "Qt",
           designation: "UI framework",
-          image: "projects/qt.png",
+          image: qt,
         },
         {
           id: 2,
-          name: "Kirigami",
-          designation: "KDE Framework",
-          image: "projects/tux.png",
-        },
-        {
-          id: 3,
           name: "C++",
           designation: "Programming language",
-          image: "projects/c-plus-plus.png",
-        },
-        {
-          id: 4,
-          name: "CMake",
-          designation: "Build system",
-          image: "projects/cmake.svg",
-        },
-        {
-          id: 5,
-          name: "Flatpak",
-          designation: "Packaging format",
-          image: "projects/flatpak.png",
+          image: cpp,
         },
       ],
     },
     {
       title: "Pagume",
       description: "Pagume is a modern Ethiopian calendar app built with KDE Kirigami and Qt6.",
-      src: "projects/calendar.png",
+      src: calendar,
       ctaText: "Open",
       ctaLink: "https://flathub.org/en/apps/io.github.wesenseged.Pagume",
       content: () => (
-        <p>
-          Pagume is a desktop app that brings the traditional Ethiopian date system to modern
-          desktops. It features accurate date conversion, event reminders, and a native KDE look.
-          <br />
-          <br />
-          Named after Ethiopia’s unique 13th month, Pagume combines tradition with a clean, elegant
-          design.
-        </p>
+        <div className="font-grotesk grid grid-cols-4 items-start gap-4 w-full">
+          {pagumeStats.map((stat) => (
+            <div
+              key={stat.id}
+              className="flex flex-col rounded-lg bg-zinc-200 dark:bg-zinc-700 p-2 items-center"
+            >
+              <div>{stat.title}</div>
+              <div className="font-semibold text-foreground">{stat.data}</div>
+            </div>
+          ))}
+        </div>
       ),
       items: [
         {
           id: 1,
           name: "Qt",
           designation: "UI framework",
-          image: "projects/qt.png",
+          image: qt,
         },
         {
           id: 2,
-          name: "Kirigami",
-          designation: "KDE Framework",
-          image: "projects/tux.png",
-        },
-        {
-          id: 3,
           name: "C++",
           designation: "Programming language",
-          image: "projects/c-plus-plus.png",
-        },
-        {
-          id: 4,
-          name: "CMake",
-          designation: "Build system",
-          image: "projects/cmake.svg",
-        },
-        {
-          id: 5,
-          name: "Flatpak",
-          designation: "Packaging format",
-          image: "projects/flatpak.png",
+          image: cpp,
         },
       ],
     },
     {
       title: "Yeneta",
       description: "A complete amharic learning application build with Kirigami and Qt6.",
-      src: "projects/yeneta.png",
+      src: yeneta,
       ctaText: "Building",
       ctaLink: "/",
       content: () => (
-        <p>
-          Yeneta is a native desktop application designed for beginner and professional Amharic
-          learners. Built with <b>Kirigami</b> and <b>Qt6</b>, it provides a clean, distraction-free
-          experience with support for offline access and an elegant modern KDE interface.
-          <br />
-          <br />
-          Its interactive design makes it perfect for everyone using it and keeping the interface
-          fully native to the Linux desktop environment.
-        </p>
+        <div className="font-grotesk grid grid-cols-4 items-start gap-4 w-full">
+          {yenetaStats.map((stat) => (
+            <div
+              key={stat.id}
+              className="flex flex-col rounded-lg bg-zinc-200 dark:bg-zinc-700 p-2 items-center"
+            >
+              <div>{stat.title}</div>
+              <div className="font-semibold text-black dark:text-white">{stat.data}</div>
+            </div>
+          ))}
+        </div>
       ),
       items: [
         {
           id: 1,
           name: "Qt",
           designation: "UI framework",
-          image: "projects/qt.png",
+          image: qt,
         },
         {
           id: 2,
-          name: "Kirigami",
-          designation: "KDE Framework",
-          image: "projects/tux.png",
-        },
-        {
-          id: 3,
           name: "C++",
           designation: "Programming language",
-          image: "projects/c-plus-plus.png",
-        },
-        {
-          id: 4,
-          name: "CMake",
-          designation: "Build system",
-          image: "projects/cmake.svg",
-        },
-        {
-          id: 5,
-          name: "Flatpak",
-          designation: "Packaging format",
-          image: "projects/flatpak.png",
+          image: cpp,
         },
       ],
     },
@@ -173,5 +151,3 @@ const Latest = () => {
     </section>
   );
 };
-
-export default Latest;

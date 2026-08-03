@@ -1,7 +1,8 @@
-import { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { useEffect, useId, useRef, useState } from "react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { AnimatedTooltip } from "./animated-tooltip";
+
 type Item = {
   id: number;
   name: string;
@@ -101,13 +102,13 @@ export function ExpandableCardDemo({ cards }: { cards: Card[] }) {
                     </div>
                     <motion.h3
                       layoutId={`title-${active.title}-${id}`}
-                      className="font-bold text-neutral-700 dark:text-neutral-200"
+                      className="font-grotesk mt-3 mb-3 font-bold text-5xl text-neutral-700 dark:text-neutral-200"
                     >
                       {active.title}
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
-                      className="text-neutral-600 dark:text-neutral-400"
+                      className="font-anek text-neutral-600 dark:text-neutral-400"
                     >
                       {active.description}
                     </motion.p>
@@ -160,13 +161,13 @@ export function ExpandableCardDemo({ cards }: { cards: Card[] }) {
               <div className="">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="font-medium text-neutral-800 dark:text-neutral-200 text-left"
+                  className="font-anek font-medium text-neutral-800 dark:text-neutral-200 text-left"
                 >
                   {card.title}
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${card.description}-${id}`}
-                  className="text-neutral-600 dark:text-neutral-400 text-left"
+                  className="font-anek text-neutral-600 dark:text-neutral-400 text-left"
                 >
                   {card.description}
                 </motion.p>
@@ -174,7 +175,7 @@ export function ExpandableCardDemo({ cards }: { cards: Card[] }) {
             </div>
             <motion.button
               layoutId={`button-${card.title}-${id}`}
-              className="px-4 py-2 text-sm rounded-md bg-gray-100 hover:bg-purple-500 hover:text-white text-black mt-4 md:mt-0"
+              className="font-anek px-4 py-2 text-sm rounded-md bg-gray-100 hover:bg-black hover:text-white text-black mt-4 md:mt-0"
             >
               {card.ctaText}
             </motion.button>

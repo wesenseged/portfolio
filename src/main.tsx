@@ -1,7 +1,7 @@
+import { createRouter, RouterProvider } from "@tanstack/react-router";
+import { ReactLenis } from "lenis/react";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { ReactLenis } from "lenis/react";
-import { RouterProvider, createRouter } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 
 import "@/index.css";
@@ -19,7 +19,7 @@ if (!rootElement.innerHTML) {
   const root = createRoot(rootElement);
   root.render(
     <StrictMode>
-      <ReactLenis root>
+      <ReactLenis root={true}>
         <RouterProvider router={router} />
       </ReactLenis>
     </StrictMode>,

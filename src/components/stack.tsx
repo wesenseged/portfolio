@@ -1,55 +1,64 @@
+import cpp from "@/assets/icons/cpp.svg";
+import lua from "@/assets/icons/lua.png";
+import neovim from "@/assets/icons/neovim.svg";
+import qt from "@/assets/icons/qt.png";
+import react from "@/assets/icons/react.svg";
+import linux from "@/assets/icons/tux.svg";
+import typescript from "@/assets/icons/typescript.svg";
+import zig from "@/assets/icons/zig.svg";
+
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import CardItem from "@/components/ui/card-items";
 
-const Stack = () => {
+export const Stack = () => {
   const tools = [
     {
       id: 1,
       name: "zig",
       designation: "A general-purpose programming",
-      image: "projects/zig.svg",
+      image: zig,
     },
     {
       id: 2,
       name: "C++",
       designation: "A general-purpose programming",
-      image: "projects/c-plus-plus.png",
+      image: cpp,
     },
     {
       id: 3,
       name: "Qt",
       designation: "Software development framework",
-      image: "projects/qt.png",
+      image: qt,
     },
     {
       id: 4,
       name: "TypeScript",
       designation: "JavaScript by Microsoft",
-      image: "projects/typescript.png",
+      image: typescript,
     },
     {
       id: 5,
       name: "Lua",
       designation: "Lightweight scripting language",
-      image: "projects/lua.png",
+      image: lua,
     },
     {
       id: 6,
       name: "React",
       designation: "A JavaScript library",
-      image: "projects/react.png",
+      image: react,
     },
     {
       id: 7,
       name: "GNU/Linux",
       designation: "Open-source operating system",
-      image: "projects/tux.png",
+      image: linux,
     },
     {
       id: 8,
       name: "Neovim",
       designation: "Modern Vim-based text editor",
-      image: "projects/neovim.png",
+      image: neovim,
     },
   ];
 
@@ -70,5 +79,3 @@ const Stack = () => {
     </section>
   );
 };
-
-export default Stack;

@@ -1,15 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
-
-import Hero from "@/components/hero";
-import Latest from "@/components/latest";
-import Projects from "@/components/projects";
-import Products from "@/components/products";
-import Stack from "@/components/stack";
-import Contact from "@/components/contact";
-
-export const Route = createFileRoute("/")({
-  component: Index,
-});
+import { Contact } from "@/components/contact";
+import { Hero } from "@/components/hero";
+import { Latest } from "@/components/latest";
+import { Products } from "@/components/products";
+import { Projects } from "@/components/projects";
+import { Stack } from "@/components/stack";
 
 function Index() {
   return (
@@ -23,3 +18,7 @@ function Index() {
     </main>
   );
 }
+
+export const Route = createFileRoute("/")({
+  component: Index,
+});

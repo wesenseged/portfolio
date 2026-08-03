@@ -4,7 +4,7 @@
   "root": true,
 
   "files": {
-    "includes": ["src/**"],
+    "includes": ["src/**", "!src/routeTree.gen.ts"],
     "ignoreUnknown": true
   },
 
@@ -27,13 +27,22 @@
     "enabled": true,
     "includes": ["src/**"],
     "rules": {
+      "complexity": {
+        "noExcessiveLinesPerFunction": {
+          "level": "on",
+          "options": {
+            "maxLines": 150
+          }
+        }
+      },
       "recommended": true,
-      "complexity": "warn",
       "correctness": "error",
       "nursery": "off",
       "performance": "warn",
       "security": "error",
-      "style": "warn",
+      "style": {
+        "noJsxLiterals": "off"
+      },
       "suspicious": "error"
     }
   },
